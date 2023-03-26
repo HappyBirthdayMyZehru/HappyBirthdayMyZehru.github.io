@@ -22,7 +22,7 @@
         opacity: 0%; 
     }
     100% {
-        opacity: 100%; 
+        opacity: 50%; 
     }
 }
 @font-face {
@@ -50,6 +50,7 @@ body{
     left:0;
     filter:hue-rotate(85deg);
     opacity: 25%;
+    height: 2556px; 
     animation-name: fadeOut;
     animation-delay: 4.5s;
     animation-duration: 500ms;
@@ -80,6 +81,7 @@ body{
     opacity: 0%;
     top:0;
     left:0;
+    height: 2600px;
     animation-name: fadeIn;
     animation-delay: 4.5s;
     animation-duration: 500ms;
@@ -120,28 +122,4 @@ body{
     background: #121212;
   }
 
-  @media screen and (orientation: landscape) and (min-width: 1000px){
-    #starbg{
-        width: 100vw;
-    }
-    #patternbg{
-        width: 100vw;
-    }
-  }
-
-  @media screen and (orientation: portrait){
-    #starbg{
-        min-height: -webkit-fill-available;
-    }
-    #patternbg{
-        min-height: -webkit-fill-available;
-    }
-  }
-  @media screen and (max-width<1000px){
-    #starbg{
-        min-height: -webkit-fill-available;
-    }
-    #patternbg{
-        min-height: -webkit-fill-available;
-    }
-  }
+  
