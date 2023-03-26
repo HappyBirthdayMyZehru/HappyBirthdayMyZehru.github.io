@@ -50,7 +50,7 @@ body{
     left:0;
     filter:hue-rotate(85deg);
     opacity: 25%;
-    height: 2556px; 
+    height: 3200px; 
     animation-name: fadeOut;
     animation-delay: 4.5s;
     animation-duration: 500ms;
@@ -81,7 +81,7 @@ body{
     opacity: 0%;
     top:0;
     left:0;
-    height: 2600px;
+    height: 3200px;
     animation-name: fadeIn;
     animation-delay: 4.5s;
     animation-duration: 500ms;
