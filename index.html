@@ -5,14 +5,31 @@
     <title>Happy Birthday My Zehru!</title>
     <link rel="icon" type="image-x-icon" href="assets/pinkheartemoji.png">
 
-    <link rel="stylesheet" href="links/styles.css">
+
 
 
   </head>
-  <body>
+  <body onload="loadFunctionality()">
     <img id="patternbg" src="assets/DayPattern.png">
     <img id="starbg" src="assets/star.jpg">
     
+    
+    <script>
+      function loadFunctionality() {
+        setTimeout(function(){
+        document.body.style.opacity = "100";
+        let linkToStyles = document.createElement("link");
+        linkToStyles.rel= "stylesheet";
+        linkToStyles.href = "links/styles.css";
+        document.body.appendChild(linkToStyles);
+        }, 1000)
+      }
+    </script>
+    <style>
+      body{
+        opacity:0;
+      }
+    </style>
     <script src="links/scripts.js"></script>
   </body>
 </html>

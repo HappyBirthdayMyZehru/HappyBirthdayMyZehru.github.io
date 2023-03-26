@@ -41,7 +41,6 @@ body{
     left:0;
     filter:hue-rotate(85deg);
     opacity: 50%;
-    height: 100vw;
     animation-name: fadeOut;
     animation-delay: 4.5s;
     animation-duration: 500ms;
@@ -51,13 +50,11 @@ body{
 }
 
 #starbg{
-    width: 100vw;
     z-index: 99;
     position:absolute;
     opacity: 0%;
     top:0;
     left:0;
-    height: 100vw;
     animation-name: fadeIn;
     animation-delay: 4.5s;
     animation-duration: 500ms;
@@ -85,4 +82,22 @@ body{
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #121212;
+  }
+
+  @media screen and (orientation: landscape){
+    #starbg{
+        width: 100vw;
+    }
+    #patternbg{
+        width: 100vw;
+    }
+  }
+
+  @media screen and (orientation: portrait){
+    #starbg{
+        height: 100vh;
+    }
+    #patternbg{
+        height: 100vh;
+    }
   }
