@@ -7,6 +7,18 @@ let animIndex = 0;
 // overflow: hidden;
 
 
-setTimeout(function(){
-    animIndex += 1;
-},2000);
+var i = 0;
+var txt = 'Text 1';
+setTimeout(typeWriter,6000);
+
+function typeWriter(){
+    var speed = 50;
+    if(i==0){
+        document.getElementById("final-content").innerHTML = "";
+    }
+    if (i < txt.length) {
+        document.getElementById("final-content").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+}

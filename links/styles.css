@@ -1,11 +1,14 @@
 @keyframes transitionAnimation {
     0% {
         background: #ff7300; 
+        overflow: hidden;
     }
     100% {
         background: #0f0235; 
+        overflow: hidden;
     }
 }
+
 @keyframes fadeOut{
     0% {
         opacity: 100%; 
@@ -22,9 +25,15 @@
         opacity: 100%; 
     }
 }
+@font-face {
+    font-family: SpectralLight;
+    src: url(../assets/Spectral-Light.ttf);
+}
 
 body{
     height: 100vh;
+    font-family: SpectralLight;
+    font-size: 10em;
     overflow: hidden;
     background: linear-gradient(to bottom right, #ff7300, #ffc400);
     animation-name: transitionAnimation;
@@ -40,15 +49,31 @@ body{
     top:0;
     left:0;
     filter:hue-rotate(85deg);
-    opacity: 50%;
+    opacity: 25%;
     animation-name: fadeOut;
     animation-delay: 4.5s;
     animation-duration: 500ms;
     animation-direction: normal;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
+    overflow: hidden;
 }
-
+#init-content{
+    z-index: 101;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    animation-name: fadeOut;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    overflow: hidden;
+}
 #starbg{
     z-index: 99;
     position:absolute;
@@ -61,6 +86,17 @@ body{
     animation-direction: normal;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
+    overflow: hidden;
+}
+#final-content{
+    z-index: 102;
+    font-size: 0.5em;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 /* width */
