@@ -4,7 +4,7 @@
         overflow: hidden;
     }
     100% {
-        background: #0f0235; 
+        background: #0f0235;
         overflow: hidden;
     }
 }
@@ -93,7 +93,7 @@ body{
     font-size: 0.5em;
     position: absolute;
     left:50%;
-    top: 50%;
+    top:50%;
     transform: translate(-50%,-50%);
     color: #fff;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;

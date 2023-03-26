@@ -16,14 +16,34 @@
     <div id="final-content"></div>    
     
     <script>
+      window.scrollTo(0, 0);
+      document.body.scrollTop = 0;
+      document.body.scrollLeft = 0;
       function loadFunctionality() {
-        setTimeout(function(){
         document.body.style.opacity = "100";
         let linkToStyles = document.createElement("link");
         linkToStyles.rel= "stylesheet";
         linkToStyles.href = "links/styles.css";
         document.body.appendChild(linkToStyles);
-        }, 1000)
+        
+        var index = 0;
+        var i = 0;
+        var txt = "Every dot that marks the night sky, shows the way to our love shining bright.          $ The patterns are erratic, they show no reason, but I kinda like that...           $ It reminds me of us, charting unknown waters together.          $ Think of all the late nights, late fights, over the phone.        $ Felt stuck, you thought I would end it all.        $ 'Starstruck, no love.' You thought my odes were a scrawl.      $ But it's a stroke of luck, that we even met at all!        $ If the universe conspired to bring us together,        $ If the moon and the sun clashed to give me the chance to protect you,           $ If a bird flapped its wings in Asia,            $ Is it not right to say this really is once-in-a-forever, once-in-always?          $ The stars aligned yesterday, and they will tomorrow.               $ So come hold my hand, because girl, I'll be damned       $ We may be sailing under a starry sea.      $     but my love, you're all I see.";
+        setTimeout(typeWriter,6000);
+
+        function typeWriter(){
+            var speed = 100;
+            if (i < txt.length && index == 0) {
+                if(txt.charAt(i) == "$"){ 
+                    document.getElementById("final-content").innerHTML = "";
+                }
+                else{
+                  document.getElementById("final-content").innerHTML += txt.charAt(i);
+                }
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
       }
     </script>
     <style>
