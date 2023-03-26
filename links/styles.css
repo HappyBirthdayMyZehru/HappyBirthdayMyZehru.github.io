@@ -120,7 +120,7 @@ body{
     background: #121212;
   }
 
-  @media screen and (orientation: landscape){
+  @media screen and (orientation: landscape) and (width>1000px){
     #starbg{
         width: 100vw;
     }
@@ -130,6 +130,14 @@ body{
   }
 
   @media screen and (orientation: portrait){
+    #starbg{
+        height: 100vh;
+    }
+    #patternbg{
+        height: 100vh;
+    }
+  }
+  @media screen and (width<1000px){
     #starbg{
         height: 100vh;
     }
