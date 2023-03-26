@@ -1,0 +1,40 @@
+@keyframes transitionAnimation {
+    0% {
+        background: #ff7300; 
+    }
+    100% {
+        background: #0f0235; 
+    }
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(to bottom right, #ff7300, #ffc400);
+    animation-name: transitionAnimation;
+    animation-delay: 4.5s;
+    animation-duration: 500ms;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ffffff65;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #323232;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #121212;
+  }
